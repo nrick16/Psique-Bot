@@ -1,0 +1,65 @@
+.unread {
+	cursor: pointer;
+	background-color: #f4f4f4;
+}
+.messages-box {
+	max-height: 28rem;
+	overflow: auto;
+}
+.online-circle {
+	border-radius: 5rem;
+	width: 5rem;
+	height: 5rem;
+}
+.messages-title {
+	float: right;
+	margin: 0px 5px;
+}
+.message-img {
+	float: right;
+	margin: 0px 5px;
+}
+.message-header {
+	text-align: right;
+	width: 100%;
+	margin-bottom: 0.5rem;
+}
+.text-editor {
+	min-height: 18rem;
+}
+.messages-list li.messages-you .messages-title {
+	float: left;
+}
+.messages-list li.messages-you .message-img {
+	float: left;
+}
+.messages-list li.messages-you p {
+	float: left;
+	text-align: left;
+}
+.messages-list li.messages-you .message-header {
+	text-align: left;
+}
+.messages-list li p {
+	max-width: 60%;
+	padding: 5px;
+	border: #000f80 1px solid;
+}
+.messages-list li.messages-me p {
+	float: right;
+}
+.ql-editor p {
+	font-size: 1rem;
+}  
+.chatbox {
+    width: 50%;
+    height: 475px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    scroll-behavior: inherit;
+    transform: translate(-50%, 0);
+    margin-top: 20px;
+    background: rgb(44, 32, 32);
+    border-radius: 10px;
+}
