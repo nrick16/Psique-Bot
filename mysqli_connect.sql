@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 16-Out-2020 às 14:12
+-- Tempo de geração: 23-Out-2020 às 01:15
 -- Versão do servidor: 10.4.14-MariaDB
 -- versão do PHP: 7.4.10
 
@@ -35,6 +35,7 @@ CREATE TABLE `chatbot_hints` (
 
 --
 -- Extraindo dados da tabela `chatbot_hints`
+-- Interações comuns --
 --
 
 INSERT INTO `chatbot_hints` (`id`, `question`, `reply`) VALUES
@@ -63,17 +64,11 @@ CREATE TABLE `message` (
 
 --
 -- Extraindo dados da tabela `message`
+-- Dados coletados da conversa --
 --
-
 INSERT INTO `message` (`id`, `message`, `added_on`, `type`) VALUES
-(64, 'oi', '2020-10-15', 'user'),
-(65, 'Olá, tudo bem? Em que posso ajudar?', '2020-10-15', 'bot'),
-(66, 'tudo bem?', '2020-10-15', 'user'),
-(67, 'Sorry not be able to understand you', '2020-10-15', 'bot'),
-(68, 'qual o seu nome?', '2020-10-15', 'user'),
-(69, 'Você pode me chamar de Psique', '2020-10-15', 'bot'),
-(70, 'oi', '2020-10-15', 'user'),
-(71, 'Olá, tudo bem? Em que posso ajudar?', '2020-10-15', 'bot');
+(122, 'oi', '2020-10-22', 'user'),
+(123, 'Olá, tudo bem? Em que posso ajudar?', '2020-10-22', 'bot');
 
 --
 -- Índices para tabelas despejadas
@@ -105,7 +100,7 @@ ALTER TABLE `chatbot_hints`
 -- AUTO_INCREMENT de tabela `message`
 --
 ALTER TABLE `message`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=72;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=124;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
