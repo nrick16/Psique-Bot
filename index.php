@@ -28,7 +28,7 @@ include('database.inc.php');
 								
 								?>
 								<li class="messages-me clearfix start_chat">
-								   Envie uma mensagem para Psique
+								   ***  Envie uma mensagem para Psique ***
 								</li>
 								<?php
 							}

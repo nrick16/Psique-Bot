@@ -4,8 +4,9 @@ include('database.inc.php');
 
 // CAPTURA O QUE O USUÁRIO DIGITOU E ENVIA UMA PROCURA PARA O BD
 $txt=mysqli_real_escape_string($con,$_POST['txt']);
-$sql="select reply from chatbot_hints where question like '%$txt%'";
+$sql="SELECT reply FROM chatbot_hints WHERE question LIKE '%$txt%'";
 $res=mysqli_query($con,$sql);
+
 
 
 // PROCURA UMA RESPOSTA ASSOCIATIVA AO QUE O USUÁRIO DIGITOU EM 'chatbot_hints'
@@ -24,10 +25,13 @@ if(mysqli_num_rows($res)>0){
 
 // --> SALVA A CONVERSA EM 'message' <--
 $added_on=date('Y-m-d h:i:s');
-mysqli_query($con,"insert into message(message,added_on,type) values('$txt','$added_on','user')"); // --> USUÁRIO
+mysqli_query($con,"INSERT INTO message(message,added_on,type) VALUES('$txt','$added_on','user')"); // --> USUÁRIO
 $added_on=date('Y-m-d h:i:s');
-mysqli_query($con,"insert into message(message,added_on,type) values('$html','$added_on','bot')"); // --> PSIQUE-BOT
+mysqli_query($con,"INSERT INTO message(message,added_on,type) VALUES('$html','$added_on','bot')"); // --> PSIQUE-BOT
+
 
 
 echo $html;
+
+
 ?>
